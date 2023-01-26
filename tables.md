@@ -61,3 +61,21 @@ I mainly brainstormed some possible fields and tables for our app, details need 
 - The universities table has a one-to-many relationship with the departments table. Each university can have multiple departments, but each department can only be associated with one university.
 - The reviews table has a one-to-one relationship with the ratings, workloads, and comments table. Each review is associated with one rating, one workload, and one comment.
 - The professor_courses table has a many-to-many relationship with the reviews table. Each professor_course can have multiple reviews and each review can be associated with multiple professor_courses.
+
+
+## Possible Django apps/models
+
+### Users app:
+- 'users' model
+
+### Professors app:
+- 'professors' model
+
+### Courses app:
+- 'courses', 'departments', 'universities' models
+
+### Reviews app:
+- 'reviews', 'ratings', 'workloads', 'comments' models
+
+### Professor_courses app:
+- 'professor_courses' model
