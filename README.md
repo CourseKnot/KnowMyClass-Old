@@ -22,3 +22,7 @@ Using your preferred virtual environment method create an environment for the pr
 - https://www.youtube.com/watch?v=2cvH0HRjZF8&t=4s
 - You may need to use ```$ open -t .zprofile``` instead of .bash_profile
 - Add this path: export PATH=${PATH}:/usr/local/mysql/bin
+#### Possible error for mysqlclient:
+- pip install mysql-connector-python
+- pip install mysqlclient
+- if error: try "xcode-select --install" for mac
