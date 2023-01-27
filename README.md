@@ -16,3 +16,9 @@ Using your preferred virtual environment method create an environment for the pr
 ```$ python3.8 -m virtualenv <env_name>``` \
 ```$ source <env_name>/bin/activate``` \
 ```$ pip install -r requirements.txt```
+
+### 3. MySQL Set up for Mac:
+#### Installation and Setup
+- https://www.youtube.com/watch?v=2cvH0HRjZF8&t=4s
+- You may need to use ```$ open -t .zprofile``` instead of .bash_profile
+- Add this path: export PATH=${PATH}:/usr/local/mysql/bin
