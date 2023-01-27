@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>Universities</h1>
+  <ul>
+    {% for university in universities %}
+      <li>{{ university.university_name }} - {{ university.city }}, {{ university.state }}, {{ university.country }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

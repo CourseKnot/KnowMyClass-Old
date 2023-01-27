@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
+import os
 from pathlib import Path
 import pymysql 
 pymysql.install_as_MySQLdb()
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "reviews_app",
     "university_department_app",
     "professors_courses_app",
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
@@ -62,7 +63,9 @@ ROOT_URLCONF = "knowmyclass_project.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),
+                 os.path.join(BASE_DIR, 'courses_app', 'templates', 'courses_app'),
+                ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
