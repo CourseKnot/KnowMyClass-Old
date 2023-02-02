@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     "reviews_app",
     "university_department_app",
     "professors_courses_app",
-    "rest_framework",
+    'corsheaders',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
