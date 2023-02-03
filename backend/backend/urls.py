@@ -19,9 +19,11 @@ from rest_framework import routers
 from knowmyclass import views      
 
 router = routers.DefaultRouter()                   
-router.register(r'courses', views.CourseView, 'courses')  
+router.register(r'courses', views.CourseView, 'courses')
+router.register(r'departments', views.DepartmentView, 'departments')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(router.urls))             
+    path('api/', include(router.urls)),
 ]
+
