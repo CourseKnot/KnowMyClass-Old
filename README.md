@@ -32,3 +32,7 @@ Using your preferred virtual environment method create an environment for the pr
 - python manage.py runserver
 - admin username: admin
 - admin password: knowmyclass
+
+### 5. React:
+- cd frontend/
+- npm start
