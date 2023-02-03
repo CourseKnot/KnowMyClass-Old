@@ -1,9 +1,0 @@
-{% extends 'base.html' %}
-{% block content %}
-  <h1>Departments</h1>
-  <ul>
-    {% for department in departments %}
-      <li>{{ department.department_name }} - {{ department.university.university_name }}</li>
-    {% endfor %}
-  </ul>
-{% endblock %}

@@ -10,7 +10,7 @@ class CourseList extends Component {
 
   async componentDidMount() {
     try {
-      const res = await fetch("http://localhost:8000/api/courses_app/");
+      const res = await fetch("http://localhost:8000/api/courses/");
       const courses = await res.json();
       this.setState({ courses });
     } catch (e) {

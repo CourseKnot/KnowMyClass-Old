@@ -26,3 +26,9 @@ Using your preferred virtual environment method create an environment for the pr
 - pip install mysql-connector-python
 - pip install mysqlclient
 - if error: try "xcode-select --install" for mac
+
+### 4. Django:
+- cd backend/
+- python manage.py runserver
+- admin username: admin
+- admin password: knowmyclass
