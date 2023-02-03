@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>Courses</h1>
+  <ul>
+    {% for course in courses %}
+      <li>{{ course.course_name }} - {{ course.description }} --> prerequisites:  {{ course.prerequisites }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
