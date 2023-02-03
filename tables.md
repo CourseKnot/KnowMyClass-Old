@@ -50,6 +50,7 @@ I mainly brainstormed some possible fields and tables for our app, details need 
 
 - Contains comments about professors and courses including professor comments, course comments, thumbs up, thumbs down, created_at, and deleted_at.
 - Columns include: comments_id, professor_comments, course_comments, thumbs_up, thumbs_down, created_at, updated_at, deleted_at.
+- FEEDBACK: Include user_id so comments aren't anonymous to us; Also, can we combine the Ratings, Comments, and Workloads tables?; Also, what is the difference between the Comments and Reviews table?
 
 
 
@@ -64,6 +65,7 @@ I mainly brainstormed some possible fields and tables for our app, details need 
 
 
 ## Possible Django apps/models
+FEEDBACK: We might not need to split our app into as many 
 
 ### Users app:
 - 'users' model
