@@ -23,7 +23,7 @@ f.close()
 # access each departments
 for i in range(1):
     dep_html = requests.get(base_url+'cmpsc/') # retrieve html source code
-    soup = BeautifulSoup(dep_html.text,"html.parser") # parse html using bs
+    soup = BeautifulSoup(dep_html.content,"html.parser") # parse html using bs
     courses = soup.find_all('div', class_='courseblock') # find all course block
 
     # setup a dict for each course
@@ -57,13 +57,13 @@ for i in range(1):
             else:
                 info_list = []                    
                 sub_blocks = block.find_all('p', class_="noindent")
-                info_list = [x.text for x in sub_blocks]
+                info_list = [x.text.strip() for x in sub_blocks]
                 course_info['other'] = info_list
         
         course_list.append(course_info)
     
     f = open('./bulletin_crawler/cmpsc.json','w')
-    json.dump(course_list,f)
+    json.dump(course_list,f,ensure_ascii=False)
     f.close()
     '''
     ### Pure regex version ###
