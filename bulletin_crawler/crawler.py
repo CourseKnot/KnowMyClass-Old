@@ -40,16 +40,33 @@ for i in range(1):
         # description
         descr_block = course.find('div', class_='courseblockdesc')
         course_info['description'] = descr_block.find('p').text.strip()
-        # Other info
-        info_blocks = course.find_all('p', class_='noindent')
+        # extra
+        extra_blocks = course.find_all('div', class_="noindent courseblockextra")
+
+        for block in extra_blocks:
+            requirements = block.find('strong')
+            # if the content is about enrollment requirements
+            if requirements:
+                if 'Prerequisite' in requirements.text:
+                    if requirements.find_next_sibling(): # has non-text descriptions
+                        course_info['prerequisite'] = requirements.find_next_sibling().text.strip()
+                    else:
+                        course_info['prerequisite'] = requirements.find_next_sibling(text=True).text.strip()
+                elif 'Concurrent' in requirements:
+                    course_info['concurrent'] = requirements.find_next_sibling().text.strip()
+            else:
+                info_list = []                    
+                sub_blocks = block.find_all('p', class_="noindent")
+                info_list = [x.text for x in sub_blocks]
+                course_info['other'] = info_list
+        
         course_list.append(course_info)
     
     f = open('./bulletin_crawler/cmpsc.json','w')
     json.dump(course_list,f)
     f.close()
     '''
-    ### regex version ###
-
+    ### Pure regex version ###
     course_pattern = '<div class="courseblocktitle clearfix".+?[</div>]{n}'
     courses = re.findall(course_pattern,dep_html.text,re.S)
     # get title (department+number)
