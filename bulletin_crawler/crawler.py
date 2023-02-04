@@ -86,7 +86,7 @@ if __name__ == '__main__':
         for course in courses:
             course_list.append(get_course_info(course,department))
 
-    # Write to file
-    f = open('./bulletin_crawler/course_data/{}.json'.format(department),'w')
-    json.dump(course_list,f,ensure_ascii=False)
-    f.close()
+        # Write to file
+        f = open('./bulletin_crawler/course_data/{}.json'.format(department),'w')
+        json.dump(course_list,f,ensure_ascii=False)
+        f.close()
