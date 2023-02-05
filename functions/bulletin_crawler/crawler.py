@@ -5,9 +5,14 @@ import re
 import requests
 import json
 from bs4 import BeautifulSoup
+import os
 
 # Undergraduate bulletin base url
 base_url = 'https://bulletins.psu.edu/university-course-descriptions/undergraduate/'
+
+""" SAVE DIR """
+save_dir = "./course_data"
+os.makedirs(save_dir, exist_ok=True)
 
 # Grab a dict of {Department_name (ABBREV): abbrev}
 def get_department_dict():

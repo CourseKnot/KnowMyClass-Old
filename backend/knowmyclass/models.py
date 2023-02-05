@@ -14,11 +14,11 @@ class Department(models.Model):
     
 class Course(models.Model):
     course_id = models.AutoField(primary_key=True)
-    course_name = models.CharField(max_length=255, default="")
-    credits = models.CharField(max_length=100, default="")
-    description = models.TextField(default="")
-    prerequisites = models.TextField(default="")
-    other = models.TextField(default="")
+    course_name = models.CharField(max_length=255)
+    credits = models.CharField(max_length=100)
+    description = models.TextField(null=True)
+    prerequisites = models.TextField(null=True)
+    other = models.TextField(null=True)
     department = models.ForeignKey(Department, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
