@@ -19,7 +19,7 @@ class Course(models.Model):
     description = models.TextField(default="")
     prerequisites = models.TextField(default="")
     other = models.TextField(default="")
-    department = models.ForeignKey(Department, on_delete=models.CASCADE, related_name='courses')
+    department = models.ForeignKey(Department, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     deleted_at = models.DateTimeField(null=True, blank=True)
