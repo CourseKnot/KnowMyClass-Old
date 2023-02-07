@@ -35,4 +35,5 @@ Using your preferred virtual environment method create an environment for the pr
 
 ### 5. React:
 - cd frontend/
+- npm install
 - npm start
