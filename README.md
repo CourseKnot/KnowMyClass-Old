@@ -27,13 +27,16 @@ Using your preferred virtual environment method create an environment for the pr
 - pip install mysqlclient
 - if error: try "xcode-select --install" for mac
 
-### 4. Django:
+### 4. Run the Project
+1. Open one terminal to start django server:
 - cd backend/
 - python manage.py runserver
-- admin username: admin
-- admin password: knowmyclass
 
-### 5. React:
+2. Open another terminal to start react server:
 - cd frontend/
 - npm install
 - npm start
+
+3. To view the django admin page:
+- admin username: admin
+- admin password: knowmyclass
