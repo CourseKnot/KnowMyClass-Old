@@ -34,7 +34,7 @@ Using your preferred virtual environment method create an environment for the pr
 
 2. Open another terminal to start react server:
 - cd frontend/
-- npm install
+- npm install (if you do not have node_modules)
 - npm start
 
 3. To view the django admin page:
