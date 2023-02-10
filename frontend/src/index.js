@@ -1,18 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
-
 import './index.css';
-import CourseList from './App';
-import Navbar from './components/Navbar';
-
+// import CourseList from './App';
+import Mainpage from './pages/Mainpage';
+import Navigationbar from './components/Navbar';
+import Login from './pages/Login';
+import {BrowserRouter, Route, Routes} from "react-router-dom"
+import Signup from './pages/Signup';
 export default function App() {
   return (
-    <Navbar />
+
+    <BrowserRouter>
+      <Navigationbar />
+      <Routes>
+  
+        <Route path='/' element={<Mainpage />} />
+        <Route path="login" element={<Login />} />
+        <Route path="signup" element={<Signup />} />
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));
