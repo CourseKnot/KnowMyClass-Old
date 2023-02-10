@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Sidebar.css';
+import CourseList from '../App';
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom"
 
 
 const Sidebar = () => {
@@ -14,7 +16,7 @@ const Sidebar = () => {
         <div className="sidebar">
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Browse Classes</a></li>
+            <Link to="browse-classes" className='nav-login'>Browse Classes</Link>
             <li><a href="#">Rate a Class</a></li>
             <li><a href="#">FAQs</a></li>
           </ul>

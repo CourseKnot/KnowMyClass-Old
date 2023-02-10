@@ -11,6 +11,7 @@ import Navigationbar from './components/Navbar';
 import Login from './pages/Login';
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 import Signup from './pages/Signup';
+import Browseclass from './components/Browseclass';
 export default function App() {
   return (
 
@@ -21,6 +22,8 @@ export default function App() {
         <Route path='/' element={<Mainpage />} />
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<Signup />} />
+        <Route path="browse-classes" element={<Browseclass />} />
+
 
       </Routes>
     </BrowserRouter>
