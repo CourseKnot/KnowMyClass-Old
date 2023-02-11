@@ -1,0 +1,35 @@
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 19vh;
+    border-radius: 25px;
+    /* background: radial-gradient(50% 50% at 50% 50%, #E3D2C6 0%, rgba(236, 233, 225, 0) 100%); */
+  }
+  
+  .search-input {
+    height: 70px;
+    width: 1000px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    margin-right: 20px;
+  }
+  
+  .search-button {
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+  }
+
+::placeholder {
+    text-align: center; 
+ }
+
+ 

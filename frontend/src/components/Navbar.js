@@ -1,16 +1,33 @@
-import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import React, { useState } from 'react';
 import './Navbar.css';
+import Sidebar from './Sidebar';
+import { Routes, Route, Link } from "react-router-dom";
+import Navbar from 'react-bootstrap/Navbar';
 
-const NavigationBar = () => (
-  <Navbar className="navbar" fixed="top">
-    <Navbar.Brand href="#home">Logo</Navbar.Brand>
-    <Nav className="ml-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#login">Login</Nav.Link>
-      <Nav.Link href="#sign-up">Sign Up</Nav.Link>
-    </Nav>
-  </Navbar>
-);
+const Navigationbar = () => {
 
-export default NavigationBar;
+  return (
+    <nav className='navbar'>
+      <div className="left-side">
+        <div className="sidebar-toggle" >
+          <Sidebar />
+        </div>
+        <Link to="/" className="nav-item">
+          <img
+              src = {require("../assets/logo.png")}
+              className='logo-img'
+              alt="KnowMyClass logo"
+          />
+        </Link>
+      </div>
+      <div className="nav-right">
+        <Link to="login" className='nav-login'>Login</Link>
+        <Link to="signup" className='nav-signup'>Sign up</Link>
+      </div>
+
+    </nav>
+  );
+};
+
+export default Navigationbar;
+
