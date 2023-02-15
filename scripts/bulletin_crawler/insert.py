@@ -1,3 +1,5 @@
+"""Insert bulletin course_data and department data into database"""
+
 import os
 import json
 from django.db import IntegrityError
