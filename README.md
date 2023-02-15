@@ -3,7 +3,7 @@
 From the parent folder you want KnowMyClass in 
 
 ```$ git clone git@github.com:yuboooo/KnowMyClass.git``` \
-```$ git branch mainpage``` (most updated feature are in mainpage branch)
+```$ git checkout mainpage``` (most updated feature are in mainpage branch)
 
 
 ## 2. Virtual Environment
