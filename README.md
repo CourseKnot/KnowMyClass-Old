@@ -41,11 +41,12 @@ If error with pip install mysqlclient -> Install and Setup MySQL first
 ## 4. Run the Project
 1. Open one terminal to start django server:
 - ```$ cd backend/```
+- ```$ python manage.py migrate```
+- ```$ python manage.py runserver```
 - ```$ python manage.py createsuperuser```
 - username: admin
 - password: knowmyclass
-- ```$ python manage.py migrates```
-- ```$ python manage.py runserver```
+
 
 2. Open another terminal to start react server:
 - ```$ cd frontend/```
