@@ -32,7 +32,7 @@ If error with pip install mysqlclient -> Install and Setup MySQL first
 ### Create MySQL database and user:
 - ```mysql -u root -p``` 
 - ```CREATE DATABASE knowmyclass_db; ``` 
-- ```CREATE USER 'kmcuser'@'localhost' IDENTIFIED BY PASSWORD 'kmcpassword';``` 
+- ```CREATE USER 'kmcuser'@'localhost' IDENTIFIED BY 'kmcpassword';``` 
 - ```GRANT ALL PRIVILEGES ON knowmyclass_db.* TO 'kmcuser'@'localhost'; ```
 ### Add data into database:
 - ```$ cd scripts\bulletin_crawler```
