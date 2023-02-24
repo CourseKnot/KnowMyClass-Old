@@ -25,9 +25,10 @@ class Course(models.Model):
     deleted_at = models.DateTimeField(null=True, blank=True)
 
 class Comment(models.Model):
-    
+    comment_id = models.AutoField(primary_key=True)
+    description = models.TextField(null=True)
 
     def __str__(self):
-        return self.course_name
+        return self.description
 
     
