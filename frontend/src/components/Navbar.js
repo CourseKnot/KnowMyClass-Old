@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
-import './Navbar.css';
+import React from 'react';
+import './css/Navbar.css';
 import Sidebar from './Sidebar';
-import { Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import logo from "../assets/kmclogo.png"
+
 
 const Navigationbar = () => {
 
@@ -13,12 +15,14 @@ const Navigationbar = () => {
         </div>
         <Link to="/" className="nav-item">
           <img
-              src = {require("../assets/logo.png")}
+              src = {logo}
+              
               className='logo-img'
               alt="KnowMyClass logo"
           />
         </Link>
       </div>
+      
       <div className="nav-right">
         <Link to="login" className='nav-login'>Login</Link>
         <Link to="signup" className='nav-signup'>Sign up</Link>

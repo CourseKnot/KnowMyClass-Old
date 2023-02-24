@@ -1,7 +1,6 @@
 
 import React from 'react';
-import './Mainpage.css';
-import Navigationbar from '../components/Navbar';
+import './css/Mainpage.css';
 import Searchbar from '../components/Searchbar';
 
 const Mainpage = () => {

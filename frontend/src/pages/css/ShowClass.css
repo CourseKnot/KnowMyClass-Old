@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500&display=swap');
+
+.show-class {
+    display: flex;
+    position: relative;
+}
+
+
+  
+
+
+.course-instructor {
+    position: absolute;
+    left: 30%;
+    top: 110px;
+    transform: translateX(-50%);
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 50px;
+
+    color: #808080;
+}
+
+
+ul {
+    list-style-type: none; /* remove bullet points */
+    margin: 20px;
+    padding: 0;
+    display: inline-block; 
+}
+  
+li {
+    display: inline-block;
+    align-items: center;
+    margin-right: 10px; /* add some space between items */
+}
+
+li:last-child {
+    margin-right: 0; /* remove margin from last item */
+}
