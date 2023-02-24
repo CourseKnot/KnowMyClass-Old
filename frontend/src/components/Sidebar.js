@@ -4,6 +4,7 @@ import CourseList from '../App';
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom"
 
 
+
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
 

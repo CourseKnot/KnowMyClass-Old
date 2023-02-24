@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import Sidebar from './Sidebar';
 import { Routes, Route, Link } from "react-router-dom";
-import Navbar from 'react-bootstrap/Navbar';
 
 const Navigationbar = () => {
 
@@ -10,7 +9,7 @@ const Navigationbar = () => {
     <nav className='navbar'>
       <div className="left-side">
         <div className="sidebar-toggle" >
-          <Sidebar />
+          <Sidebar placement="start" name="start" />
         </div>
         <Link to="/" className="nav-item">
           <img
