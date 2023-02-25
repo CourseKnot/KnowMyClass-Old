@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Course, Department
+from .models import Course, Department, Comment
 
 # Register your models here.
 
@@ -14,3 +14,5 @@ class DepartmentAdmin(admin.ModelAdmin):
     inlines = [CourseInline]
 
 admin.site.register(Department, DepartmentAdmin)
+
+admin.site.register(Comment)
