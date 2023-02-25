@@ -9,14 +9,13 @@ const Navigationbar = () => {
 
   return (
     <nav className='navbar'>
-      <div className="left-side">
+      <div className="nav-left">
         <div className="sidebar-toggle" >
           <Sidebar placement="start" name="start" />
         </div>
-        <Link to="/" className="nav-item">
+        <Link to="/">
           <img
               src = {logo}
-              
               className='logo-img'
               alt="KnowMyClass logo"
           />

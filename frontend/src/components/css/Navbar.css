@@ -1,19 +1,24 @@
 .navbar {
-    background: linear-gradient(180deg, #ECE9E1 0%, rgba(236, 233, 225, 0) 100%);
-    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
     justify-content: space-between;
-    align-items: center;
-    height: 60px;
-  }
+    background: linear-gradient(180deg, #ECE9E1 0%, rgba(236, 233, 225, 0) 100%);
+}
+  
 .logo-img {
     height: 50px;
     width: auto;
     display: block;
 }
-.left-side {
+
+.nav-left {
     display: flex;
     align-items: center;
 }
+
 .nav-right {
     font-family: 'Inter';
     font-style: normal;
@@ -22,17 +27,16 @@
     line-height: 30px;
     display: flex;
     align-items: center;
-    text-align: center;
-    color: #000000;
+    justify-content: flex-end;
 }
 
 .nav-login {
-    background: rgba(217, 217, 217, 0.5);
+    background: rgba(192, 183, 177, 0.5);
     border-radius: 37px;
-    color: #000000;
-    margin-right: 20px;
+    color: white;
     padding: 15px 30px;
 }
+
 .nav-signup {
     color: #000000;
     margin-left: 20px;
@@ -41,6 +45,5 @@
 
 .sidebar-toggle {
     font-size: 20px;
-    cursor: pointer;
     margin-right: 20px;
   }
