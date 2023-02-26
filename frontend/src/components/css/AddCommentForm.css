@@ -1,0 +1,20 @@
+.add-comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 20px;
+
+    position: absolute;
+    width: 100%;
+
+    position: relative;
+    height: 350px;
+    left: 113px;
+    top: 1100px;
+
+    position: absolute;
+    
+
+}

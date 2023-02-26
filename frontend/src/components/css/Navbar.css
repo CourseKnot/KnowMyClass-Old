@@ -1,0 +1,65 @@
+.navbar {
+    position: fixed;
+    padding-top: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    height: 80px;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #ECE9E1 0%, rgba(236, 233, 225, 0) 100%);
+
+}
+  
+.logo-img {
+    height: 45px;
+    width: auto;
+    display: block;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-search .Searchbar {
+    width: 200px;
+    height: 24px;
+    margin-left: auto;
+  }
+
+
+.nav-right {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-login {
+    background: rgba(192, 183, 177, 0.5);
+    border-radius: 37px;
+    color: white;
+    padding: 15px 30px;
+}
+
+.nav-signup {
+    color: #000000;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.sidebar-toggle {
+    font-size: 20px;
+    margin-right: 20px;
+  }

@@ -1,10 +1,8 @@
 import React, { Component } from "react";
-import "./App.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavigationBar from "./components/Navbar";
 
 
-class CourseList extends Component {
+class Browseclass extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -69,7 +67,6 @@ class CourseList extends Component {
   render() {
     return (
       <div className="container mt-5">
-        <NavigationBar />
         <h2>Departments</h2>
         <ul className="list-group">{this.renderDepartments()}</ul>
         {this.state.selectedDepartment && (
@@ -83,4 +80,4 @@ class CourseList extends Component {
   }
 }
 
-export default CourseList;
+export default Browseclass;
