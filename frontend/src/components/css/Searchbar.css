@@ -1,35 +1,44 @@
-.search-bar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 19vh;
-    border-radius: 25px;
-    /* background: radial-gradient(50% 50% at 50% 50%, #E3D2C6 0%, rgba(236, 233, 225, 0) 100%); */
-  }
-  
-  .search-input {
-    height: 70px;
-    width: 1000px;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 25px;
-    border: none;
-    margin-right: 20px;
-  }
-  
-  .search-button {
-    height: 50px;
-    width: 100px;
-    font-size: 20px;
-    background-color: #000;
-    color: #fff;
-    border-radius: 25px;
-    border: none;
-    cursor: pointer;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;300&display=swap');
+
+.searchbar {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 15px;
+  height: 70px;
+}
+
+.search-input {
+  font-family: 'Poppins';
+  font-style: normal;
+  width: 75%;
+  font-size: 20px;
+  border-radius: 25px;
+  border: none;
+}
+
+.search-button-div {
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+  padding: 40px;
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-button {
+  height: 50px;
+}
+
+
+
+
+
 
 ::placeholder {
-    text-align: center; 
- }
-
- 
+  text-align: center; 
+}

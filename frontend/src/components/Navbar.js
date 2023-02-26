@@ -1,11 +1,15 @@
 import React from 'react';
 import './css/Navbar.css';
 import Sidebar from './Sidebar';
-import { Link } from "react-router-dom";
+import { Link, useLocation} from "react-router-dom";
 import logo from "../assets/kmclogo.png"
+import Searchbar from './Searchbar';
 
 
 const Navigationbar = () => {
+
+  const location = useLocation();
+  const isMainpage = location.pathname === "/"
 
   return (
     <nav className='navbar'>
@@ -21,7 +25,13 @@ const Navigationbar = () => {
           />
         </Link>
       </div>
-      
+      <div className='nav-search'>
+        {isMainpage ? null : (
+          <>
+            {/* <Searchbar /> */}
+          </>
+        )}
+      </div>
       <div className="nav-right">
         <Link to="login" className='nav-login'>Login</Link>
         <Link to="signup" className='nav-signup'>Sign up</Link>

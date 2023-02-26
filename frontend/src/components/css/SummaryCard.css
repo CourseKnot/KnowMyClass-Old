@@ -7,10 +7,10 @@
     gap: 20px;
 
     position: absolute;
-    width: 35%;
+    width: 45%;
     height: 329px;
-    left: 153px;
-    top: 700px;
+
+    margin-top: 70px;
 
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
@@ -26,10 +26,10 @@
     gap: 20px;
 
     position: absolute;
-    width: 35%;
+    width: 45%;
     height: 329px;
-    right: 153px;
-    top: 700px;
+    right: 0px;
+    margin-top: 70px;
 
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);

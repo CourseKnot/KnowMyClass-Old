@@ -4,8 +4,10 @@
     left: 0;
     width: 100%;
     z-index: 999;
+    height: 80px;
     justify-content: space-between;
     background: linear-gradient(180deg, #ECE9E1 0%, rgba(236, 233, 225, 0) 100%);
+
 }
   
 .logo-img {
@@ -17,6 +19,12 @@
 .nav-left {
     display: flex;
     align-items: center;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-right {

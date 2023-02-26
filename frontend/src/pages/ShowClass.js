@@ -13,11 +13,11 @@ const ShowClass = () => {
     return (
         <div className="show-class">
             <div className="course-instructor">
-                <ul>
+                <ul className='course-name'>
                     <li><Icon icon="mingcute:book-4-line" color="#808080" /></li>
                     <li>Course Name</li>
                 </ul>
-                <ul>
+                <ul className='instructor-name'>
                     <li><Icon icon="pepicons-pop:person-filled" color="#808080" /></li>
                     <li>Instructor</li>
                 </ul>

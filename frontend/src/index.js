@@ -20,17 +20,17 @@ export default function App() {
 
     <BrowserRouter>
       <Navigationbar />
-      <Routes>
-  
-        <Route path='/' element={<Mainpage />} />
-        <Route path="login" element={<Login />} />
-        <Route path="signup" element={<Signup />} />
-        <Route path="browse-classes" element={<Browseclass />} />
-        <Route path="show-class" element={<ShowClass />} />
-        
+      <div className='pages'>
+        <Routes>
+          
+          <Route path='/' element={<Mainpage />} />
+          <Route path="login" element={<Login />} />
+          <Route path="signup" element={<Signup />} />
+          <Route path="browse-classes" element={<Browseclass />} />
+          <Route path="show-class" element={<ShowClass />} />
 
-
-      </Routes>
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }
