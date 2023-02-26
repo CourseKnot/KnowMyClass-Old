@@ -2,7 +2,7 @@ import React from 'react';
 import './css/Navbar.css';
 import Sidebar from './Sidebar';
 import { Link, useLocation} from "react-router-dom";
-import logo from "../assets/kmclogo.png"
+import logo from "../assets/kmclogotext.png"
 import Searchbar from './Searchbar';
 
 
