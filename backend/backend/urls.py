@@ -21,6 +21,8 @@ from knowmyclass import views
 router = routers.DefaultRouter()                   
 router.register(r'courses', views.CourseView, 'courses')
 router.register(r'departments', views.DepartmentView, 'departments')
+router.register(r'reviews', views.ReviewView, 'reviews')
+router.register(r'professor_courses', views.Professor_courseView, 'professor_courses')
 
 urlpatterns = [
     path('admin/', admin.site.urls),

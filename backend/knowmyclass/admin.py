@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Course, Department, Comment
+from .models import Course, Department, Review, Professor_course
 
 # Register your models here.
 
@@ -15,4 +15,5 @@ class DepartmentAdmin(admin.ModelAdmin):
 
 admin.site.register(Department, DepartmentAdmin)
 
-admin.site.register(Comment)
+admin.site.register(Review)
+admin.site.register(Professor_course)

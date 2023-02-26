@@ -9,7 +9,7 @@ const SummaryCard = () => {
     <div>
 
         <div className="course-summary">
-
+            
         </div>
         <div className="professor-summary">
             
