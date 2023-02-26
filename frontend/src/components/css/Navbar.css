@@ -27,6 +27,13 @@
     justify-content: center;
 }
 
+.nav-search .Searchbar {
+    width: 200px;
+    height: 24px;
+    margin-left: auto;
+  }
+
+
 .nav-right {
     font-family: 'Inter';
     font-style: normal;

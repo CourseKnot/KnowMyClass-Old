@@ -8,15 +8,20 @@
   background: #FFFFFF;
   border-radius: 15px;
   height: 70px;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%);
+  position: relative;
 }
 
 .search-input {
   font-family: 'Poppins';
   font-style: normal;
-  width: 75%;
+  width: 100%;
   font-size: 20px;
   border-radius: 25px;
   border: none;
+  height: 70px;
 }
 
 .search-button-div {
@@ -34,11 +39,44 @@
   height: 50px;
 }
 
-
-
-
-
-
 ::placeholder {
   text-align: center; 
+}
+
+
+
+.searchbar-small {
+  width: 550px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 15px;
+  position: relative;
+}
+
+.search-input-small {
+  font-family: 'Poppins';
+  font-style: normal;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 25px;
+  border: none;
+  height: 40px;
+}
+
+.search-button-div-small {
+  position: absolute;
+  right: 0%;
+  cursor: pointer;
+  padding: 40px;
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-button-small {
+  height: 30px;
 }

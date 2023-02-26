@@ -27,9 +27,9 @@ const Navigationbar = () => {
       </div>
       <div className='nav-search'>
         {isMainpage ? null : (
-          <>
-            {/* <Searchbar /> */}
-          </>
+          <div className='small-searchbar'>
+            <Searchbar isSmall={true} />
+          </div>
         )}
       </div>
       <div className="nav-right">

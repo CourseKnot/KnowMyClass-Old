@@ -6,7 +6,7 @@ import searchbuttonsmall from "../assets/search-button-small.png"
 import searchbuttonlarge from "../assets/search-button-large.png"
 
 
-const Searchbar = () => {
+const Searchbar = ({isSmall}) => {
 
   const navigate = useNavigate();
   const handleSearchClick = () => {
@@ -23,17 +23,18 @@ const Searchbar = () => {
   };
 
 
+
   return (
-    <div className='searchbar'>
+    <div className={isSmall ? 'searchbar-small' : 'searchbar'}>
       <input
         type="text"
         placeholder="Search for a class or a professor"
-        className='search-input'
+        className={isSmall ? 'search-input-small' : 'search-input'}
       />
-      <div className='search-button-div'>
+      <div className={isSmall ? 'search-button-div-small': 'search-button-div'}>
         <img
               src={hovered ? searchbuttonlarge : searchbuttonsmall}
-              className='search-button'
+              className={isSmall ? 'search-button-small' : 'search-button'}
               alt="Search"
               onClick={handleSearchClick}
               onMouseEnter={handleMouseEnter}
