@@ -29,7 +29,7 @@ class Course(models.Model):
 
 class Professor_course(models.Model):
     professor_course_id = models.AutoField(primary_key=True)
-    course_name = models.ForeignKey(Course, on_delete=models.CASCADE)
+    course = models.ForeignKey(Course, on_delete=models.CASCADE)
     course_overall_rating = models.DecimalField(max_digits=3, decimal_places=1, default=0.0)
     professor_overall_rating = models.DecimalField(max_digits=3, decimal_places=1, default=0.0)
     difficulty_overall_rating = models.DecimalField(max_digits=3, decimal_places=1, default=0.0)
@@ -39,7 +39,7 @@ class Professor_course(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     deleted_at = models.DateTimeField(null=True, blank=True)
     def __str__(self):
-        return self.course_name.course_name
+        return self.course.course_name
 
 class Review(models.Model):
     review_id = models.AutoField(primary_key=True)
@@ -54,7 +54,7 @@ class Review(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     deleted_at = models.DateTimeField(null=True, blank=True)
     def __str__(self):
-        return str(self.professor_course.course_name.course_name + " -> Review: " + str(self.review_id))
+        return str(self.professor_course.course.course_name + " -> Review: " + str(self.review_id))
 
 
     

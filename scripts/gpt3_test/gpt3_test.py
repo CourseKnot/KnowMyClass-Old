@@ -10,7 +10,7 @@ sys.path.append(os.path.join(project_root, '../../backend'))
 os.environ['DJANGO_SETTINGS_MODULE'] = 'backend.settings'
 django.setup()
 
-from knowmyclass.models import Comment
+from knowmyclass.models import Professor_course, Course
 
 # Load your API key
 openai.api_key_path = 'userkey'
@@ -27,9 +27,12 @@ with open('comments.txt', 'r') as file:
     print(response['choices'][0]['text'].strip())
     summary = response['choices'][0]['text'].strip()
 
-    try:
-        comment = Comment(description=summary)
-        comment.save()
-        print("Summary saved to database.")
-    except IntegrityError as e:
-        print("Error saving summary: {}".format(e))
+try:
+    review_summary = Professor_course(course_summary=summary)
+    existing_course = Professor_course.objects.get(course=Course.objects.get(course_name="CMPSC 465: Data Structures and Algorithms"))
+    existing_course.course_summary = review_summary.course_summary
+    existing_course.save()
+    print("Summary updated in database.")
+except IntegrityError as e:
+    print("Error saving summary: {}".format(e))
+
