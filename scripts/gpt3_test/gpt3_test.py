@@ -29,24 +29,33 @@ def generate_summary(txt_lst):
     total_words = 0
     comment_lst, summary_lst = [], []
 
+    couting = 0
+    section = 0
     for comment in txt_lst:
         # Check if the total length is under max length
         if total_words + word_count(comment) > max_prompt_len:
             summary_lst.append(list_summary(comment_lst))
+
             comment_lst = []
             total_words = 0
+            print(f"Summarize Section {section} Completed -> Next Section")
+            section += 1
         else:
             total_words += word_count(comment)
             comment_lst.append(comment)
+        couting += 1
+        print(f"Processing Comment {couting} / {len(txt_lst)} - Summarize Completion: {couting/len(txt_lst)*100:.2f}%")
     summary_lst.append(list_summary(comment_lst))
 
     return summary_lst
 
 if __name__ == '__main__':
+    print("------Process Comments------")
     with open(comment_dir,'r') as file:
         summary_lst = generate_summary([x for x in file])
         
     # Feed the summary list to GPT more times until there's only a single summary
+    print("------Summarize Comments------")
     while len(summary_lst) != 1:
         summary_lst = generate_summary(summary_lst)
 
