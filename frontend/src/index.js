@@ -12,20 +12,25 @@ import Login from './pages/Login';
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 import Signup from './pages/Signup';
 import Browseclass from './components/Browseclass';
+import ShowClass from './pages/ShowClass';
+
+
 export default function App() {
   return (
 
     <BrowserRouter>
       <Navigationbar />
-      <Routes>
-  
-        <Route path='/' element={<Mainpage />} />
-        <Route path="login" element={<Login />} />
-        <Route path="signup" element={<Signup />} />
-        <Route path="browse-classes" element={<Browseclass />} />
+      <div className='pages'>
+        <Routes>
+          
+          <Route path='/' element={<Mainpage />} />
+          <Route path="login" element={<Login />} />
+          <Route path="signup" element={<Signup />} />
+          <Route path="browse-classes" element={<Browseclass />} />
+          <Route path="show-class" element={<ShowClass />} />
 
-
-      </Routes>
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }

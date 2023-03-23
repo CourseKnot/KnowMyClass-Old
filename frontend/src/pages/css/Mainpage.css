@@ -1,8 +1,10 @@
+.mainpage {
 
-.main-page-text {
-    margin-top: 200px;
+}
+
+.mainpage-bigtext {
+    margin-top: 50px;
     font-family: 'Cardo';
-    font-style: normal;
     font-weight: 400;
     font-size: 48px;
     line-height: 0px;
@@ -14,7 +16,8 @@
     text-decoration-skip-ink: none;
 }
 
-.main-page-small-text {
+.mainpage-smalltext {
+    margin-top: 40px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;

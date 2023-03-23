@@ -1,24 +1,36 @@
-import React, { useState } from 'react';
-import './Navbar.css';
+import React from 'react';
+import './css/Navbar.css';
 import Sidebar from './Sidebar';
-import { Routes, Route, Link } from "react-router-dom";
-import Navbar from 'react-bootstrap/Navbar';
+import { Link, useLocation} from "react-router-dom";
+import logo from "../assets/kmclogotext.png"
+import Searchbar from './Searchbar';
+
 
 const Navigationbar = () => {
 
+  const location = useLocation();
+  const isMainpage = location.pathname === "/"
+
   return (
     <nav className='navbar'>
-      <div className="left-side">
+      <div className="nav-left">
         <div className="sidebar-toggle" >
-          <Sidebar />
+          <Sidebar placement="start" name="start" />
         </div>
-        <Link to="/" className="nav-item">
+        <Link to="/">
           <img
-              src = {require("../assets/logo.png")}
+              src = {logo}
               className='logo-img'
               alt="KnowMyClass logo"
           />
         </Link>
+      </div>
+      <div className='nav-search'>
+        {isMainpage ? null : (
+          <div className='small-searchbar'>
+            <Searchbar isSmall={true} />
+          </div>
+        )}
       </div>
       <div className="nav-right">
         <Link to="login" className='nav-login'>Login</Link>

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500&display=swap');
+
+
+.diagram-container {
+
+    height: 351px;
+
+    background: #C0B7B1;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.syllabus-container {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.syllabus-container li {
+    display: flex; /* set li elements to block */
+    margin-bottom: 10px; /* add margin between li elements */
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.pdf-container {
+    width: 90px;
+    height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: flex; /* set container to flexbox */
+    justify-content: center; /* center icon horizontally */
+    align-items: center; /* center icon vertically */
+}
+
+
+
+
+.syllabus-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.update-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
