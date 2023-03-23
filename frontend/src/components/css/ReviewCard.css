@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500&display=swap');
 
 
-.course-summary{
+.course-review{
 
     flex-direction: column;
     justify-content: center;
@@ -10,34 +10,35 @@
     gap: 20px;
 
     position: absolute;
-    width: 45%;
+
     height: 329px;
 
-    margin-top: 70px;
+
+    margin-top: 470px;
 
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
-.course-summary-head ul {
+.course-review-head ul {
     display: flex;
     align-items: center;
     margin: 0;
     padding: 0;
   }
   
-  .course-summary-head li {
+  .course-review-head li {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    color: #181818;
-    font-size: 23px;
+    color: #808080;
+    font-size: 26px;
     margin-right: 10px;
     list-style: none;
   }
   
 
-.professor-summary{
+.professor-review{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -48,31 +49,14 @@
     width: 45%;
     height: 329px;
     right: 0px;
-    margin-top: 70px;
+    margin-top: 470px;
 
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
 }
-
-.professor-summary-head ul {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.professor-summary-head li {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  color: #181818;
-  font-size: 23px;
-  margin-right: 10px;
-  list-style: none;
-}
-
-.course-summary,
-.professor-summary {
+.course-review,
+.professor-review {
  /* adjust to desired height */
   overflow: auto;
 }

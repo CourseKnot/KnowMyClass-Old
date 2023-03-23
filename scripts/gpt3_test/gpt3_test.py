@@ -9,10 +9,11 @@ sys.path.append(os.path.join(project_root, '../../backend'))
 os.environ['DJANGO_SETTINGS_MODULE'] = 'backend.settings'
 django.setup()
 
-from knowmyclass.models import Comment
+from knowmyclass.models import Professor_course, Course
 
 # Load your API key
 openai.api_key_path = 'userkey'
+
 
 
 # Path to comments file
@@ -76,4 +77,5 @@ if __name__ == '__main__':
     # Write to file
     with open(output_dir, 'w') as file:
         file.write(summary_lst[0])
+
 

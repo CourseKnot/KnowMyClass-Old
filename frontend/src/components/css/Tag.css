@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500&display=swap');
+
+.tag {
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  padding: 0 20px;
+  height: 30px;
+  background: #d9d9d9;
+  border-radius: 25px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.tag p {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
