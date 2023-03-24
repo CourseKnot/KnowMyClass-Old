@@ -1,0 +1,20 @@
+.workload-chart {
+    height: 300px;
+    width: 300px; /* Add width */
+  }
+  
+  .icon-wrapper {
+    position: relative;
+    height: 100%; /* Add height */
+    width: 100%; /* Add width */
+  }
+  
+  .icon-wrapper .middle-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    z-index: -1;
+  }
+  

@@ -6,13 +6,16 @@ const OverallRating = (props) => {
     return (
         <div className='overall-rating'>
             <div className='overall-rating-text'>
-                <p>{props.text}</p>
+                <p>Overall Rating</p>
             </div>
-            <div className='overall-rating-rate'>
+            <div className='overall-rating-actual-rate'>
                 <p>{props.rate}</p>
             </div>
+            <div className='overall-rating-full-rate'>
+                <p>/5</p>
+            </div>
             <div className='overall-rating-icon'>
-                <img src={overall-ratingIcon} alt="overall-rating-icon" />
+                <img src={overallRatingIcon} alt="overall-rating-icon" />
             </div>
         </div>
     );

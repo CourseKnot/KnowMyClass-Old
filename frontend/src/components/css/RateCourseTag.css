@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@700&family=Poppins:wght@700&display=swap');
 
+.rate-course {
+    position: relative;
+    width: 300px;
+    height: 230px;
+}
+
+.rate-course-icon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
 .rate-course-tag {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 165px;
     /* Style for font */
     font-family: 'Lato';
     font-style: normal;
@@ -13,6 +30,7 @@
     display: inline-flex; 
     letter-spacing: 0.025em;
     color: #FFFFFF;
+    white-space: nowrap;
 
     /* Style for tag div */
     height: 60px;
@@ -22,7 +40,6 @@
     padding: 0 60px;
 }
 
-.rate-course-tag p {
-    text-align: center;
-    margin: 0; /* Center the text inside the tag */
+.rate-course * {
+    margin: 0;
 }
