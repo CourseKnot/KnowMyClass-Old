@@ -8,8 +8,10 @@ const NavbarComponent = (props) => {
                 <p className='navbar-component-text1'>'COURSE</p>
                 <p className='navbar-component-text2'>KNOT</p>
             </div>
-            <p className='navbar-component-login'>login</p>
-            <p className='navbar-component-login'>sign up</p>
+            <div className='navbar-component-login'>
+                <p>login</p>
+                <p>sign up</p>
+            </div>
         </div>
     );
 };

@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@700&display=swap');
 
 .navbar-component {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
     background: white;
     height: 130px;
     display: flex;
     align-items: center; /* Centers the content vertically */
-    justify-content: flex-start; /* Optional: Aligns content to the left */
+    justify-content: space-between; 
     padding-left: 15px; /* Optional: Adds some padding on the left side */
   }
   
@@ -60,6 +65,7 @@
 }
 
 .navbar-component-login {
+    
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -74,3 +80,8 @@
     color: #1B1C1E;
 
 }
+
+.navbar-component-login p{
+    margin-right: 40px;
+  }
+  

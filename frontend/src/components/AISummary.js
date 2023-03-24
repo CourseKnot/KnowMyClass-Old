@@ -8,7 +8,7 @@ const AISummary = (props) => {
                 <p>Ai generated summary -</p>
             </div>
             <div className='ai-summary-text2'>
-                <p>Students say the course...</p>
+                <p>{props.title}</p>
             </div>
             <div className='ai-summary-text3'>
                 <p>{props.text}</p>

@@ -22,17 +22,17 @@ const WorkloadChart = ({ workloads }) => {
   );
 
   const backgroundColors = [
-    'rgba(176, 186, 248, 0.5)',
-    'rgba(124, 143, 255, 0.5)',
-    'rgba(123, 97, 255, 0.2)',
-    'rgba(123, 97, 255, 0.5)',
+    'rgba(176, 186, 248, 1)',
+    'rgba(124, 143, 255, 1)',
+    'rgba(115, 103, 255, 1)',
+    'rgba(60, 25, 156, 1)',
   ];
 
   const borderColors = [
     'rgba(176, 186, 248, 1)',
     'rgba(124, 143, 255, 1)',
-    'rgba(123, 97, 255, 1)',
-    'rgba(123, 97, 255, 1)',
+    'rgba(115, 103, 255, 1)',
+    'rgba(60, 25, 156, 1)',
   ];
   const totalStudents = workloads.length;
 
@@ -62,7 +62,7 @@ const WorkloadChart = ({ workloads }) => {
       ctx.font = 'bold 12px sans-serif';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
-      ctx.fillStyle = '#000';
+      ctx.fillStyle = '#FFF';
   
       chart.data.labels.forEach((label, index) => {
         const metaData = chart.getDatasetMeta(0);

@@ -1,0 +1,48 @@
+.comprehensive-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.comprehensive-section-head {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.comprehensive-section-head-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+.comprehensive-section-body,
+.comprehensive-section-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.comprehensive-section-tags,
+.comprehensive-section-course-name {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.comprehensive-section-course-name {
+    position: absolute;
+    top: 5rem; /* Adjust the negative value as needed */
+  }
+
+
+.comprehensive-section-rate-tag {
+  align-self: center;
+}
+
+
