@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Poppins:wght@700&display=swap');
+
+.ai-summary {
+    /* Style for tag div */
+    position: relative;
+    padding: 40px;
+    gap: 20px;
+    width: 549px;
+    height: 334px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.ai-summary p {
+    margin: 0;
+}
+
+
+.ai-summary-text1 {
+    position: absolute;
+    top: 30px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #1B1C1E;
+}
+
+.ai-summary-text2 {
+    position: absolute;
+    top: 60px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    color: #1B1C1E;
+}
+
+.ai-summary-text3 {
+    position: absolute;
+    top: 120px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+    color: #1B1C1E;
+}

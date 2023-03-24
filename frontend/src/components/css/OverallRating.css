@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@700&family=Poppins:wght@700&display=swap');
+
+.difficulty {
+    /* Style for tag div */
+    position: relative;
+    height: 209px;
+    width: 281px;
+    background: #1B1C1E;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+
+.difficulty-text {
+    position: absolute;
+    left: 29px;
+    top: 141px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.025em;
+    color: #FFFFFF;
+}
+
+.difficulty-rate {
+    position: absolute;
+    right: 50px;
+    top: 82px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.025em;
+    color: #FFFFFF;
+}
+
+.difficulty-icon {
+    position: absolute;
+    left: 24px;
+    top: 38px;
+
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 96px;
+    height: 96px;
+    background: #FFFFFF;
+    border-radius: 50%; 
+}

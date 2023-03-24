@@ -1,17 +1,13 @@
-
 import React from 'react';
-import './css/Mainpage.css';
-import Searchbar from '../components/Searchbar';
+import { Link } from 'react-router-dom';
 
-const Mainpage = () => {
+const MainPage = () => {
+  return (
+    <div>
+      <h1>Main Page</h1>
+      <Link to="/course-display">Go to Course Display</Link>
+    </div>
+  );
+};
 
-    return (
-      <div className='mainpage'>
-        <p className='mainpage-bigtext'>Discover the right classes for you</p>
-        <p className='mainpage-smalltext'>View student reviews, ratings, and class syllabus</p>
-        <Searchbar />
-      </div>
-    );
-  };
-
-export default Mainpage;
+export default MainPage;
