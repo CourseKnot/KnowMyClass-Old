@@ -3,8 +3,8 @@
 .difficulty {
     /* Style for tag div */
     position: relative;
-    height: 209px;
-    width: 281px;
+    height: 27vh; /* Make height responsive */
+    width: 20vw; /* Make width responsive */
     background: #1B1C1E;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
@@ -13,14 +13,14 @@
 
 .difficulty-text {
     position: absolute;
-    left: 29px;
-    top: 141px;
+    left: 10%; /* Make position responsive */
+    bottom: 3%; /* Make position responsive */
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 1.4vw; /* Make font size responsive */
+    line-height: 1.5vw; /* Make line height responsive */
     display: inline-flex; 
     align-items: center;
     justify-content: center;
@@ -31,14 +31,14 @@
 
 .difficulty-rate {
     position: absolute;
-    right: 50px;
-    top: 82px;
+    right: 15%; /* Make position responsive */
+    bottom:7%; /* Make position responsive */
 
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 3.2vw; /* Make font size responsive */
+    line-height: 2vw; /* Make line height responsive */
     display: inline-flex; 
     align-items: center;
     justify-content: center;
@@ -49,15 +49,19 @@
 
 .difficulty-icon {
     position: absolute;
-    left: 24px;
-    top: 38px;
+    left: 10%; /* Make position responsive */
+    top: 15%; /* Make position responsive */
 
     display: inline-flex; 
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 96px;
-    height: 96px;
+    width: 5vw; /* Make width responsive */
+    height: 5vw; /* Make height responsive */
     background: #FFFFFF;
     border-radius: 50%; 
+}
+.difficulty-icon img {
+    width: 85%;
+    height: auto;
 }

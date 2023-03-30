@@ -89,24 +89,23 @@ const WorkloadChart = ({ workloads }) => {
   
   return (
     <div className="workload-chart">
-      <div className="icon-wrapper">
-        <Icon
-          icon="ic:round-access-time-filled"
-          color="#d9d9d9"
-          className="middle-icon"
-        />
-        <Doughnut
-          data={data}
-          plugins={[segmentTextPlugin]}
-          options={{
-            plugins: {
-              legend: {
-                display: false,
-              },
+      <Icon
+        icon="ic:round-access-time-filled"
+        color="#d9d9d9"
+        className="middle-icon"
+      />
+      <Doughnut
+        className='doughnut-chart'
+        data={data}
+        plugins={[segmentTextPlugin]}
+        options={{
+          plugins: {
+            legend: {
+              display: false,
             },
-          }}
-        />
-      </div>
+          },
+        }}
+      />
     </div>
   );  
 };

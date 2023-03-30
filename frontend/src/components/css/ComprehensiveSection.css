@@ -27,12 +27,17 @@
   align-items: flex-end;
 }
 
-.comprehensive-section-tags,
-.comprehensive-section-course-name {
+.comprehensive-section-tags { 
   display: flex;
   flex-direction: row;
   gap: 1rem;
   margin-top: 2rem;
+}
+.comprehensive-section-course-name {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .comprehensive-section-course-name {
@@ -44,5 +49,11 @@
 .comprehensive-section-rate-tag {
   align-self: center;
 }
+.comprehensive-section-body {
+  margin-top: -11vh;
+  width: 97%;
+}
 
-
+.comprehensive-section-footer { 
+  gap: 4rem;
+}

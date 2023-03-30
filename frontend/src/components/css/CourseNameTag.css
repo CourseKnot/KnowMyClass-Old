@@ -2,11 +2,12 @@
 
 /* Style of font */
 .course-name-tag {
+    /* Style of font */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.5vw; /* Make font size responsive */
+    line-height: 1.3vw; /* Make line height responsive */
     display: inline-flex; 
     align-items: center;
     justify-content: center;
@@ -15,10 +16,10 @@
     color: #1B1C1E;
 
     /* Style for tag div */
-    height: 48px;
+    height: 6.4vh; /* Make height responsive */
     border: 0.8px solid #1B1C1E;
     border-radius: 20px;
-    padding: 0 30px; 
+    padding: 0 3vw; /* Make padding responsive */
 }
 
 .course-name-tag p {

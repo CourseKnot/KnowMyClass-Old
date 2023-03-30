@@ -1,25 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Poppins:wght@700&display=swap');
 
-.ai-summary {
+.review-card {
     /* Style for tag div */
-    position: relative;
+    display: flex;
+    flex-direction: column;
     padding: 3.5vh; /* Make padding responsive */
     gap: 2vh; /* Make gap responsive */
-    width: 40vw; /* Make width responsive */
-    height: 45vh; /* Make height responsive */
+    width: 100%; /* Make width responsive */
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
-.ai-summary p {
+.review-card p {
     margin: 1vw;
 }
 
+.review-card-head {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: .9vw;
+    line-height: 22px;
+    color: #dfd000;
+}
 
-.ai-summary-text1 {
-    position: absolute;
-    top: 1vh; /* Make top position responsive */
+.review-card-title {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -28,10 +34,7 @@
     color: #1B1C1E;
 }
 
-.ai-summary-text2 {
-    position: absolute;
-    top: 6vh; /* Make top position responsive */
-
+.review-card-text2 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -40,10 +43,7 @@
     color: #1B1C1E;
 }
 
-.ai-summary-text3 {
-    position: absolute;
-    top: 14vh; /* Make top position responsive */
-
+.review-card-paragraph {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;

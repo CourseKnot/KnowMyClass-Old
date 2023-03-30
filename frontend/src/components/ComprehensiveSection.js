@@ -42,14 +42,17 @@ const ComprehensiveSection = () => {
         <br></br>
         <br></br>
         <br></br>
-        <br></br>
-
 
 
         <div className='comprehensive-section-footer'>
             <AISummary title="Students say the course..." text="This computer science course provided students with a comprehensive understanding of programming languages, algorithms, and data structures. The lectures were highly informative and the assignments, although challenging, were rewarding. The course offers a solid foundation for further studies in the field."/>
             <AISummary title="Students say the professor..." text="The professor's teaching style was engaging, interactive, and highly recommended. However, some explanations could have been clearer, leading to moments of uncertainty in completing assignments. Nonetheless, the professor was always available for questions and discussions."/>
         </div>
+
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
 
     </div>
   );

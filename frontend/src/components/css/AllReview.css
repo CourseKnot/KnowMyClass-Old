@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Poppins:wght@700&display=swap');
+
+.all-review {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+  
+.all-review-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.all-review-body {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.all-review-text {
+    top: 6vh; /* Make top position responsive */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.7vw;
+    line-height: 38px;
+    color: #1B1C1E;
+}

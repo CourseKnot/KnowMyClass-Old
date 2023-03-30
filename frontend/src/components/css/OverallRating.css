@@ -3,8 +3,9 @@
 .overall-rating {
     /* Style for tag div */
     position: relative;
-    height: 300px;
-    width: 200px;
+    height: 33vh; /* Make height responsive */
+    width: 15vw; /* Make width responsive */
+    /* background-color: aquamarine; */
 }
 
 .overall-rating p {
@@ -15,14 +16,14 @@
 .overall-rating-text {
     position: absolute;
     left: 50%;
-    top: 250px;
+    top: 85%; /* Make position responsive */
     transform: translateX(-50%);
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 1.2vw; /* Make font size responsive */
+    line-height: 1.8vw; /* Make line height responsive */
     display: inline-flex; 
     align-items: center;
     justify-content: center;
@@ -36,14 +37,14 @@
 .overall-rating-actual-rate {
     position: absolute;
     left: 50%;
-    top: 55%;
+    bottom: 13%; /* Make position responsive */
     transform: translateX(-50%);
 
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
-    font-size: 65px;
-    line-height: 78px;
+    font-size: 4.3vw; /* Make font size responsive */
+    line-height: 4.3vw; /* Make line height responsive */
     display: inline-flex; 
     align-items: center;
     justify-content: center;
@@ -54,15 +55,15 @@
 
 .overall-rating-full-rate {
     position: absolute;
-    left: 88%;
-    top: 65%;
+    left: 80%; /* Make position responsive */
+    bottom: 13%; /* Make position responsive */
     transform: translateX(-50%);
 
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 1.5vw; /* Make font size responsive */
+    line-height: 2.8vw; /* Make line height responsive */
     display: inline-flex; 
     align-items: center;
     justify-content: center;
@@ -73,9 +74,13 @@
 
 .overall-rating-icon {
     position: absolute;
-    left: 53%;
+    left: 50%;
     top: 0%;
     transform: translateX(-50%);
+    width: 12vw; /* Make icon width responsive */
+}
 
-
+.overall-rating-icon img {
+    width: 100%;
+    height: auto;
 }

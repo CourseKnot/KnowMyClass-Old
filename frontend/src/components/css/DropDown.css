@@ -1,0 +1,9 @@
+.custom-dropdown .dropdown-toggle {
+    font-size: calc(0.5em + .8vw); /* Adjust the font size to match CheckBox */
+    padding: 0.5rem 5rem; /* Adjust the padding to match CheckBox */
+  }
+  
+  .custom-dropdown .dropdown-menu {
+    font-size: calc(0.5em + 1vw); /* Adjust the font size to match CheckBox */
+  }
+  
