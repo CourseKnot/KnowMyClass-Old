@@ -1,11 +1,23 @@
 import React from 'react';
 import './css/ReviewCard.css'
+import { Icon } from '@iconify/react';
+import difficultyIcon from '../assets/Difficulty-icon.svg';
 
 const ReviewCard = (props) => {
     return (
         <div className='review-card'>
             <div className='review-card-head'>
-                <p>Spring 2023</p>
+                <p className='review-card-head-semester'>Spring 2023</p>
+                <div className='review-card-head-icon'>
+                    <Icon icon="mingcute:book-4-line" />
+                    <p>5</p>
+                    <Icon icon="mdi:face-man" />
+                    <p>5</p>
+                    <Icon icon="ic:round-access-time-filled" />
+                    <p>5</p>
+                    <img src={difficultyIcon} alt="difficulty-icon" />
+                    <p>5</p>
+                </div>
             </div>
             <div className='review-card-course'>
                 <div className='review-card-title'>

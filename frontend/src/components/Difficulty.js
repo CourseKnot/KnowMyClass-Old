@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/Difficulty.css'
-import difficultyIcon from '../assets/Difficulty-icon.png';
+import difficultyIcon from '../assets/Difficulty-icon.svg';
 
 const Difficulty = (props) => {
     return (

@@ -17,12 +17,23 @@
 }
 
 .review-card-head {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.review-card-head-semester {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: .9vw;
     line-height: 22px;
     color: #dfd000;
+}
+
+.review-card-head-icon {
+    font-size: 2vw;
+    line-height: 22px;
+    display: inline-flex;
 }
 
 .review-card-title {
