@@ -1,4 +1,5 @@
 import Form from 'react-bootstrap/Form';
+import React from 'react';
 import './css/CheckBox.css';
 
 function CheckBox() {
