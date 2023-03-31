@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/Difficulty.css'
+import { Icon } from '@iconify/react';
 import difficultyIcon from '../assets/Difficulty-icon.svg';
 
 const Difficulty = (props) => {
@@ -12,7 +13,7 @@ const Difficulty = (props) => {
                 <p>{props.rate}</p>
             </div>
             <div className='difficulty-icon'>
-                <img src={difficultyIcon} alt="difficulty-icon" />
+                <Icon className='icon' icon="iconoir:gym" />
             </div>
         </div>
     );

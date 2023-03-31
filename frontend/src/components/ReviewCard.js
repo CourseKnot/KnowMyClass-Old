@@ -15,7 +15,7 @@ const ReviewCard = (props) => {
                     <p>5</p>
                     <Icon icon="ic:round-access-time-filled" />
                     <p>5</p>
-                    <img src={difficultyIcon} alt="difficulty-icon" />
+                    <Icon icon="iconoir:gym" />
                     <p>5</p>
                 </div>
             </div>

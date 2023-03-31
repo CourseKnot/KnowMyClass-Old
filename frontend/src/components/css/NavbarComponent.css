@@ -19,27 +19,39 @@
     margin: 0;
 }
 
-.navbar-component-text {
+.navbar-component-logo {
     display: inline-flex;
+}
+
+.logoText {
+    width: auto;
+    height: 28px;
+}
+
+.logoIcon {
+    width: auto;
+    height: 28px;
 }
 
 .navbar-component-text1 {
     font-family: 'Montserrat';
+    font-style: normal;
     font-weight: 800; /* ExtraBold */
     font-size: 26px;
     line-height: 40px;
     display: flex;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.7px;
     text-transform: uppercase;
     color: #FFFFFF; /* Inside of text is white color */
   
     /* Stroke (outline) */
     -webkit-text-stroke: 0.7px #1B1C1E; /* Stroke is black */
+
   
     /* Drop shadow */
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
 .navbar-component-text2 {
@@ -58,10 +70,11 @@
 
     color: #1B1C1E;
     /* Stroke (outline) */
-    -webkit-text-stroke: 0.7px #1B1C1E; /* Stroke is black */
+    /* -webkit-text-stroke: 0.7px #1B1C1E;  */
+    /* Stroke is black */
   
     /* Drop shadow */
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
 .navbar-component-login {

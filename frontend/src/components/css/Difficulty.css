@@ -61,7 +61,7 @@
     background: #FFFFFF;
     border-radius: 50%; 
 }
-.difficulty-icon img {
+.difficulty-icon .icon {
     width: 85%;
     height: auto;
 }
