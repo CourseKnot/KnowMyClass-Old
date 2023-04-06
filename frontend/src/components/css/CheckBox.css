@@ -1,21 +1,23 @@
 /* CSS for CheckBox component */
 
 .custom-checkbox {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: inline-flex;
   }
   
   .custom-checkbox .form-check {
-    display: flex;
-    align-items: center;
-    font-size: calc(0.5em + 1vw); /* Adjust the font size */
+  display: flex;
+  align-items: center;
+  font-size: 12px; /* Fixed font size */
   }
   
   .custom-checkbox .form-check-input {
-    width: calc(1em + 0.7vw);
-    height: calc(1em + 0.7vw);
-    margin-right: calc(0.2em + 0.3vw);
+  width: 1.4em;
+  height: 1.4em;
+  margin-right: 0.3em;
   }
+  
+  
   

@@ -22,7 +22,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 1.2vw; /* Make font size responsive */
+    font-size: 18px; /* Make font size responsive */
     line-height: 1.8vw; /* Make line height responsive */
     display: inline-flex; 
     align-items: center;
@@ -43,8 +43,8 @@
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
-    font-size: 4.3vw; /* Make font size responsive */
-    line-height: 4.3vw; /* Make line height responsive */
+    font-size: 65px; /* Make font size responsive */
+    line-height: 78px; /* Make line height responsive */
     display: inline-flex; 
     align-items: center;
     justify-content: center;
@@ -62,8 +62,8 @@
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
-    font-size: 1.5vw; /* Make font size responsive */
-    line-height: 2.8vw; /* Make line height responsive */
+    font-size: 25px;
+    line-height: 30px;
     display: inline-flex; 
     align-items: center;
     justify-content: center;

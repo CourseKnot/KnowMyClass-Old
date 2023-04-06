@@ -24,7 +24,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 1.4vw; /* Make font size responsive */
+    font-size: 12px; /* Make font size responsive */
     line-height: 27px;
     display: inline-flex; 
     align-items: center;
