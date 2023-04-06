@@ -1,0 +1,18 @@
+.mainpage-search {
+    display: block;
+    text-align: center;
+}
+
+.mainpage-search1 {
+    display: flex;
+    justify-content: center;
+}
+
+.mainpage-head {
+    display: flex;
+    align-items: center;
+}
+
+.mainpage-head1 {
+    display: block;
+}
