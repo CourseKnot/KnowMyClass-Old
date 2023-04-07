@@ -9,6 +9,11 @@
     margin: 0;
 }
 
+
+.card-clickable {
+    cursor: pointer;
+  }
+  
 .syllabus-text {
     font-family: 'Poppins';
     font-style: normal;

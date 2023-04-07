@@ -14,11 +14,13 @@
 
 .review-card p {
     margin: 1vw;
+    margin-bottom: 0px;
 }
 
 .review-card-head {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .review-card-head-semester {
@@ -33,7 +35,12 @@
 .review-card-head-icon {
     font-size: 20px;
     line-height: 20px;
-    display: inline-flex;
+    display: flex;
+    align-items: flex-end;
+}
+
+.review-card-head-icon p {
+    margin-bottom: 0;
 }
 
 .review-card-title {
@@ -43,6 +50,7 @@
     font-size: 20px;
     line-height: 20px;
     color: #1B1C1E;
+    margin-top: 20px;
 }
 
 .review-card-paragraph {
@@ -53,4 +61,5 @@
     line-height: 28px;
     letter-spacing: 1.5px;
     color: #1B1C1E;
+    margin-top: 20px;
 }
