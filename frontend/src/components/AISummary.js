@@ -26,7 +26,8 @@ import './css/AISummary.css';
 
 const cardStyle = {
     width: '550px', /* Set the width of the card */
-    height: '335px', /* Set the height of the card */
+    maxWidth: '600px',
+    height: '350px', /* Set the height of the card */
     background: "#FFFFFF",
     boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
     borderRadius: "10px",

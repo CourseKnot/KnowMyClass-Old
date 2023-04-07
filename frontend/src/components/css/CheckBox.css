@@ -10,7 +10,8 @@
   .custom-checkbox .form-check {
   display: flex;
   align-items: center;
-  font-size: 12px; /* Fixed font size */
+  font-size: 15px; /* Fixed font size */
+  line-height: 15px;
   }
   
   .custom-checkbox .form-check-input {

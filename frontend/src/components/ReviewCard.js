@@ -1,7 +1,6 @@
 import React from 'react';
 import './css/ReviewCard.css'
 import { Icon } from '@iconify/react';
-import difficultyIcon from '../assets/Difficulty-icon.svg';
 
 const ReviewCard = (props) => {
     return (
