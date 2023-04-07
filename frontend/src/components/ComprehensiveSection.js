@@ -40,7 +40,6 @@ const ComprehensiveSection = () => {
 
         <br></br>
         <br></br>
-        <br></br>
 
 
         <div className='comprehensive-section-footer'>
