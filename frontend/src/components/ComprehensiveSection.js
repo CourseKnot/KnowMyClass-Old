@@ -9,7 +9,6 @@ import OverallRating from '../components/OverallRating';
 import WorkloadChart from '../components/WorkloadChart';
 import './css/ComprehensiveSection.css'
 
-const workloads = [2, 5, 7, 9, 12, 18];
 
 const ComprehensiveSection = () => {
   return (
@@ -35,7 +34,7 @@ const ComprehensiveSection = () => {
         <div className='comprehensive-section-body'>
             <OverallRating rate="4.2"/>
             <Difficulty text="Difficulty" rate="3.5"/>
-            <WorkloadChart workloads={workloads} />
+            <WorkloadChart />
             <Syllabus text="Syllabus" date="Last update: 2/22/2023"/>
         </div>
 

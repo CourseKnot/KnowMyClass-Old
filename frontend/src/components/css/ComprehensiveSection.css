@@ -17,7 +17,15 @@
     gap: 1rem;
   }
 
-.comprehensive-section-body,
+.comprehensive-section-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  align-items: flex-end;
+}
+
 .comprehensive-section-footer {
   display: flex;
   flex-direction: row;

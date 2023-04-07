@@ -1,14 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@700&family=Poppins:wght@500;700&display=swap');
 
 .syllabus {
-    /* Style for tag div */
-    position: relative;
-    width: 14vw; /* Make width responsive */
-    height: 27vh; /* Make height responsive */
-    background: #FFFFFF;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    margin: 0;
+    display: block;
+    text-align: center;
 }
 
 .syllabus p {
@@ -16,44 +10,27 @@
 }
 
 .syllabus-text {
-    position: absolute;
-    left: 50%;
-    top: 4vh; /* Make top position responsive */
-    transform: translateX(-50%);
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 12px; /* Make font size responsive */
-    line-height: 27px;
-    display: inline-flex; 
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    font-size: 18px;
+    line-height: 18px;
     letter-spacing: 0.025em;
     color: #1B1C1E;
 }
 
 .syllabus-date {
-    position: absolute;
-    left: 50%;
-    bottom: 4vh; /* Make bottom position responsive */
-    transform: translateX(-50%);
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: .6vw; /* Make font size responsive */
-    line-height: 20px;
-    text-align: center;
+    font-size: 13px;
+    line-height: 13px;
     color: #1B1C1E;
     white-space: nowrap;
 }
 
 
 .syllabus-icon {
-    position: absolute;
-    left: 50%;
-    top: 10vh; /* Make top position responsive */
-    transform: translateX(-50%);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
